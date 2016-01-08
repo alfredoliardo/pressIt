@@ -8,23 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		4D2B3D461A98CA9300A5C2B8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D2B3D451A98CA9300A5C2B8 /* main.cpp */; };
+		4D2B3D571A98CAD400A5C2B8 /* Decoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D2B3D4D1A98CAD400A5C2B8 /* Decoder.cpp */; };
+		4D2B3D581A98CAD400A5C2B8 /* Encoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D2B3D4F1A98CAD400A5C2B8 /* Encoder.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4D2B3D401A98CA9300A5C2B8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = usr/share/man/man1;
+			dstSubfolderSpec = 16;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4D2B3D421A98CA9300A5C2B8 /* pressIt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pressIt; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D2B3D451A98CA9300A5C2B8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4D2B3D4C1A98CAD400A5C2B8 /* BST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BST.h; sourceTree = "<group>"; };
+		4D2B3D4D1A98CAD400A5C2B8 /* Decoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Decoder.cpp; sourceTree = "<group>"; };
+		4D2B3D4E1A98CAD400A5C2B8 /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		4D2B3D4F1A98CAD400A5C2B8 /* Encoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Encoder.cpp; sourceTree = "<group>"; };
+		4D2B3D501A98CAD400A5C2B8 /* Encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Encoder.h; sourceTree = "<group>"; };
+		4D2B3D541A98CAD400A5C2B8 /* minPriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = minPriorityQueue.h; sourceTree = "<group>"; };
+		4D2B3D551A98CAD400A5C2B8 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		4D2B3D561A98CAD400A5C2B8 /* RBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBT.h; sourceTree = "<group>"; };
+		4D2B3D591A98CC7900A5C2B8 /* file.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = file.txt; path = pressIt/file.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +52,7 @@
 		4D2B3D391A98CA9300A5C2B8 = {
 			isa = PBXGroup;
 			children = (
+				4D2B3D591A98CC7900A5C2B8 /* file.txt */,
 				4D2B3D441A98CA9300A5C2B8 /* pressIt */,
 				4D2B3D431A98CA9300A5C2B8 /* Products */,
 			);
@@ -58,6 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				4D2B3D451A98CA9300A5C2B8 /* main.cpp */,
+				4D2B3D551A98CAD400A5C2B8 /* Node.h */,
+				4D2B3D4C1A98CAD400A5C2B8 /* BST.h */,
+				4D2B3D561A98CAD400A5C2B8 /* RBT.h */,
+				4D2B3D541A98CAD400A5C2B8 /* minPriorityQueue.h */,
+				4D2B3D501A98CAD400A5C2B8 /* Encoder.h */,
+				4D2B3D4E1A98CAD400A5C2B8 /* Decoder.h */,
+				4D2B3D4F1A98CAD400A5C2B8 /* Encoder.cpp */,
+				4D2B3D4D1A98CAD400A5C2B8 /* Decoder.cpp */,
 			);
 			path = pressIt;
 			sourceTree = "<group>";
@@ -118,7 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D2B3D571A98CAD400A5C2B8 /* Decoder.cpp in Sources */,
 				4D2B3D461A98CA9300A5C2B8 /* main.cpp in Sources */,
+				4D2B3D581A98CAD400A5C2B8 /* Encoder.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +254,7 @@
 				4D2B3D4B1A98CA9300A5C2B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
